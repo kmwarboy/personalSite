@@ -4,53 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>KaitWarboy.dev | Syracuse, NY</title>
+    <title>kaitwarboy.dev | syracuse, ny</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body style="background-color: azure; color: darkslategrey;">
+  <body style="background-color: #1A1A1A; color:white">
     <div
       class="container"
       style="margin-top: 50px; max-width: 600px; width:auto;"
     >
-      <h2>Contact me below:</h2>
+      <h2>get in touch!</h2>
       <form action="https://mailthis.to/kmwarboy@gmail.com" method="POST">
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name">name:</label>
           <input
             type="text"
             class="form-control"
             id="name"
-            placeholder="Enter name"
+            name="Name"
+            placeholder="enter name"
           />
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
+          <label for="email">email:</label>
           <input
             type="email"
             class="form-control"
             id="email"
-            placeholder="Enter email address"
+            name="Email"
+            placeholder="enter email address"
           />
         </div>
         <div class="form-group">
-          <label for="message">Message:</label>
+          <label for="message">message:</label>
           <textarea
             class="form-control"
             id="message"
-            placeholder="Enter your message here"
+            name="Message"
+            placeholder="enter your message here"
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-success">Send Email</button>
         <input type="hidden" name="_honeypot" value="" />
+        <input type="hidden" name="_after" value="https://kaitwarboy.dev/" />
+        <button type="submit" class="btn btn-success">send email</button>
       </form>
       <a href="index.html">
         <button class="btn btn-primary" style="margin-top:25px;">
-          Return Home
+          return home
         </button>
       </a>
     </div>
