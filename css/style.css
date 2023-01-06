@@ -334,6 +334,11 @@ form {
 	font-family: "IBM Plex Mono", monospace;
 }
 
+form button {
+	margin-top: 20px;
+	width: 100%;
+}
+
 @media screen and (max-width: 780px) {
 	.introContainer {
 		width: 100%;

@@ -68,14 +68,18 @@
 						can find my email address in my resume.
 					</p>
 					<!-- <p class="socials">social media links</p> -->
-					<form action="https://mailthis.to/kmwarboy@gmail.com" method="POST">
+					<form
+						action="https://mailthis.to/kmwarboy@gmail.com"
+						method="POST"
+						enctype="multipart/form-data"
+					>
 						<div class="form-group">
 							<label for="name">name:</label>
 							<input
 								type="text"
 								class="form-control"
 								id="name"
-								name="Name"
+								name="name"
 								placeholder="enter name"
 							/>
 						</div>
@@ -85,7 +89,7 @@
 								type="email"
 								class="form-control"
 								id="email"
-								name="Email"
+								name="_replyto"
 								placeholder="enter email address"
 							/>
 						</div>
@@ -94,15 +98,21 @@
 							<textarea
 								class="form-control"
 								id="message"
-								name="Message"
+								name="message"
 								placeholder="enter your message here"
 							></textarea>
 						</div>
-						<input type="hidden" name="_honeypot" value="" />
+
 						<input
 							type="hidden"
 							name="_after"
 							value="https://kaitwarboy.dev/"
+						/>
+						<input type="hidden" name="_honeypot" value="" />
+						<input
+							type="hidden"
+							name="_confirmation"
+							value="Thanks for taking the time to email me. Your message has been sent + I'll be in touch soon!"
 						/>
 						<button type="submit" class="btn btn-success">send email</button>
 					</form>
