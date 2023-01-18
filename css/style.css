@@ -273,11 +273,11 @@ font-family: 'IBM Plex Mono', monospace; */
 
 .rightHalf {
 	background-color: #f8f9fa;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	width: 75%;
-	height: 100vh;
+	min-height: 100vh;
 	z-index: -1;
 	display: flex;
 	justify-content: flex-end;
@@ -349,6 +349,10 @@ form {
 form button {
 	margin-top: 20px;
 	width: 100%;
+}
+
+.g-recaptcha {
+	margin-top: 20px;
 }
 
 @media screen and (max-width: 780px) {
